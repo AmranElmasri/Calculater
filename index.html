@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <h1> Calculater </h1>
+    <div>
+
+        <input id="screen" type="number">
+
+        <br>
+        <button onclick="getNumber(0)">0</button>
+        <button onclick="getNumber(1)">1</button>
+        <button onclick="getNumber(2)">2</button>
+        <br>
+        <button onclick="getNumber(3)">3</button>
+        <button onclick="getNumber(4)">4</button>
+        <button onclick="getNumber(5)">5</button>
+        <br>
+        <button onclick="getNumber(6)">6</button>
+        <button onclick="getNumber(7)">7</button>
+        <button onclick="getNumber(8)">8</button>
+        <br>
+        <button onclick="getNumber(9)">9</button>
+        <button onclick="getNumber('.')"> . </button> 
+        <button onclick="window.location.reload()">C</button>
+        <br>
+        <button onclick="getOperators('*')">*</button>    
+        <button onclick="getOperators('-')">-</button>
+        <button onclick="getOperators('+')">+</button>
+        <br>
+        <button onclick="getStoE(screen.value)"> S/E </button> 
+        <button onclick="getOperators('/')">/</button>
+        <button onclick="calculate()">=</button>
+        <br>
+        <button onclick="getDtoS(screen.value)"> D/S </button> 
+        <button onclick="getStoD(screen.value)"> S/D </button> 
+        <button onclick="getEtoS(screen.value)"> E/S </button>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
